@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('../assets/fonts/OpenDyslexic-Regular.otf'),
+       url('../assets/fonts/OpenDyslexic-Bold.otf'),
+       url('../assets/fonts/OpenDyslexic-BoldItalic.otf'),
+       url('../assets/fonts/OpenDyslexic-Italic.otf');
+     
+  /* Outros formatos de arquivo podem ser adicionados aqui */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'OpenDyslexic', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0;
+  background-color: #FF7800;
+}
+
+.logo {
+  width: 50vh;
+  margin-top: 20px;
+  filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, .2));
+}
+
+.h1-page{
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  
+  margin: auto 2vh 10% 2vh;
+
+}
+
+.button {
+  font-family: 'OpenDyslexic', sans-serif;
+  width: 20vh;
+  height: 7vh;
+  border-radius: 25px;
+  border: none;
+  font-size: 18px;
+  margin: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, .4));
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.entrar {
+  background-color: #800080;
+  color: #fff;
+}
+
+.entrar:hover {
+  background-color: #fff;
+  color: #800080;
+}
+
+.cadastrar {
+  background-color: #fff;
+  color: #800080;
+}
+
+.cadastrar:hover {
+  background-color: #800080;
+  color: #fff;
+}
+
+.btn-principal {
+  width: 40vh;
+}
+
+.container-topo {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 25vh;
+  margin-top: 7vh;
+}
+
+.voltar {
+  display: flex;
+  align-items: center;
+}
+
+.voltar-icon img{
+  width: 4vh;
+  color: #fff;
+  margin-bottom: 3vh;
+
+}
+
+.campo-input {
+  display: flex;
+  align-items: center;
+  width: 40vh;
+  height: 5vh;
+  margin-top: 5vh;
+  background-color: #fff;
+  border-radius: 25px;
+  filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, .3));
+}
+
+.campo-input img {
+  width: 3.4vh;
+  margin-left: 1.4vh;
+}
+
+.campo-input input[type="text"],
+.campo-input input[type="password"] {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 10px;
+  color: #000;
+  font-family: 'OpenDyslexic', sans-serif;
+}
+
+.campo-input input[type="password"] {
+  letter-spacing: 4px;
+}

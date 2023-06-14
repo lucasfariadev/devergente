@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <title>Meu Site</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/funcoes.js"></script>
+
+  <title>Devergente</title>
 </head>
 <body>
-  <img class="logo" src="img/logo.png" alt="Logo do Site">
+  <img class="logo" src="assets/img/logo.png" alt="Logo do Site">
   <div class="container">
-    <button class="button entrar">Entrar</button>
-    <button class="button cadastrar">Cadastrar</button>
+    <button class="button entrar" onclick="irParaPagina('pages/entrar.html');">Entrar</button>
+    <button class="button cadastrar" onclick="irParaPagina('pages/cadastrar.html')">Cadastrar</button>
   </div>
 </body>
 </html>

@@ -7,6 +7,17 @@
      
   /* Outros formatos de arquivo podem ser adicionados aqui */
 }
+
+:root {
+  --azul: #55ACEE;
+  --verde: #12BD12;
+  --laranja: #FF7800;
+  --roxo: #800080;
+  --vermelho: #F7000F;
+  --amarelo: #FFCD32;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +32,7 @@ body {
   justify-content: space-between;
   height: 100vh;
   margin: 0;
-  background-color: #FF7800;
+  background-color: var(--laranja);
 }
 
 .logo {
@@ -62,22 +73,22 @@ body {
 }
 
 .entrar {
-  background-color: #800080;
+  background-color: var(--roxo);
   color: #fff;
 }
 
 .entrar:hover {
   background-color: #fff;
-  color: #800080;
+  color: var(--roxo);
 }
 
 .cadastrar {
   background-color: #fff;
-  color: #800080;
+  color: var(--roxo);
 }
 
 .cadastrar:hover {
-  background-color: #800080;
+  background-color: var(--roxo);
   color: #fff;
 }
 
@@ -126,9 +137,16 @@ body {
   border: none;
   background-color: transparent;
   font-size: 16px;
+  width: 30vh;
+  height: 5vh;
   padding: 10px;
   color: #000;
   font-family: 'OpenDyslexic', sans-serif;
+}
+
+.campo-input input[type="text"]:focus,
+.campo-input input[type="password"]:focus {
+outline: none;
 }
 
 .campo-input input[type="password"] {

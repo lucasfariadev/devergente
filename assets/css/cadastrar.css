@@ -1,0 +1,288 @@
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('../assets/fonts/OpenDyslexic-Regular.otf'),
+       url('../assets/fonts/OpenDyslexic-Bold.otf'),
+       url('../assets/fonts/OpenDyslexic-BoldItalic.otf'),
+       url('../assets/fonts/OpenDyslexic-Italic.otf');
+     
+  /* Outros formatos de arquivo podem ser adicionados aqui */
+}
+
+:root {
+  --azul: #55ACEE;
+  --verde: #12BD12;
+  --laranja: #FF7800;
+  --roxo: #800080;
+  --vermelho: #F7000F;
+  --amarelo: #FFCD32;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'OpenDyslexic', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--roxo);
+}
+
+.logo {
+  width: 50vh;
+  margin-top: 20px;
+  filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, .2));
+}
+
+.h1-page{
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  
+  margin: auto 2vh 10% 2vh;
+
+}
+
+.button {
+  font-family: 'OpenDyslexic', sans-serif;
+  width: 20vh;
+  height: 7vh;
+  border-radius: 25px;
+  border: none;
+  font-size: 18px;
+  margin: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, .4));
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.avancar {
+  background-color: var(--laranja);
+  color: #fff;
+}
+
+.avancar:hover {
+  background-color: #fff;
+  color: var(--laranja);
+}
+
+.cadastrar {
+  background-color: #fff;
+  color: var(--roxo);
+}
+
+.cadastrar:hover {
+  background-color: var(--roxo);
+  color: #fff;
+}
+
+.btn-principal {
+  width: 40vh;
+}
+
+.container-topo {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 5vh;
+  margin-top: 7vh;
+}
+
+.voltar {
+  display: flex;
+  align-items: center;
+}
+
+.voltar-icon img{
+  width: 4vh;
+  color: #fff;
+  margin-bottom: 3vh;
+
+}
+
+.campo-input {
+  display: flex;
+  align-items: center;
+  width: 40vh;
+  height: 5vh;
+  margin-top: 2vh;
+  background-color: #fff;
+  border-radius: 25px;
+  filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, .3));
+}
+
+.campo-input img {
+  width: 3.4vh;
+  margin-left: 1.4vh;
+  margin-right: .4vh;
+}
+
+.campo-input input {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  width: 30vh;
+  height: 5vh;
+  padding: 10px;
+  color: #000;
+  font-family: 'OpenDyslexic', sans-serif;
+  padding: 0;
+}
+
+.campo-input input:focus {
+outline: none;
+}
+
+.dois-campos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40vh; /* Defina a largura total desejada para os campos */
+}
+
+.dois-campos .campo-input {
+  width: 19vh; /* Ajuste a largura dos campos com base na largura total e no espaçamento desejado */
+
+  margin-right: 0;
+}
+.dois-campos .campo-input input{
+  width: 9.5vh;
+}
+.campo-input > :nth-child(3) {
+  margin: 0;
+}
+
+.campo-input {
+  display: flex;
+  align-items: center;
+  width: 40vh;
+  height: 5vh;
+  margin-top: 2vh;
+  background-color: #fff;
+  border-radius: 25px;
+  filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, .3));
+  position: relative;
+  z-index: 1000; /* Aumente o valor do z-index para garantir que fique acima dos outros elementos */
+}
+
+
+
+.campo-input img {
+  width: 3.4vh;
+  margin-left: 1.4vh;
+  margin-right: .4vh;
+}
+
+.custom-select {
+  position: relative;
+  
+  flex: 1;
+}
+
+.selected-option {
+  display: block;
+  color: #000;
+  font-family: 'OpenDyslexic', sans-serif;
+}
+
+.options-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.option {
+  padding:0;
+  width: 20vh;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.campo-input:hover .options-list {
+  display: block;
+}
+.select-customizado {
+  position: relative;
+  z-index: 2;
+}
+
+.select-customizado select {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: #000;
+  font-family: 'OpenDyslexic', sans-serif;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 18vh;
+}
+
+.select-customizado::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 6px 0 6px;
+  border-color: #000 transparent transparent transparent;
+}
+
+.select-customizado option {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+}
+
+.select-customizado option:first-child {
+  display: none;
+}
+
+select:focus {
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+

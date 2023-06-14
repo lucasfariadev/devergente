@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/cadastrar.css">
+  <script src="../assets/js/funcoes.js"></script>
+  <title>Devergente</title>
+</head>
+
+<body>
+  <div class="container-topo">
+    <div class="voltar">
+      <a href="javascript:history.back()" class="voltar-icon"><img src="../assets/img/icons/voltar_icon.png" alt="" srcset=""></i></a>
+    </div>
+    <h1 class="h1-page">Cadastrar</h1>
+    <div class="campo-input">
+      <img src="../assets/img/icons/person_icon.png" alt="Ícone de Carta">
+      <input type="text" value="Nome Completo" onclick="limparValor(this)">
+    </div>
+
+    <div class="dois-campos">
+      <div class="campo-input">
+        <img src="../assets/img/icons/birth_icon.png" alt="Ícone de Chave">
+        <input type="text" value="Nasc." onclick="limparValor(this)">
+        <img src="../assets/img/icons/calendar_icon.png" alt="Ícone de Chave">
+      </div>
+      <div class="campo-input">
+        <div class="select-customizado">
+          <select>
+            <option selected disabled hidden>Gênero</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="nao-binario">Não Binário</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="campo-input">
+      <img src="../assets/img/icons/mail_icon.png" alt="Ícone de Carta">
+      <input type="text" value="Email" onclick="limparValor(this)">
+    </div>
+    <div class="campo-input">
+      <img src="../assets/img/icons/mail_icon.png" alt="Ícone de Carta">
+      <input type="text" value="Confirmar Email" onclick="limparValor(this)">
+    </div>
+    <div class="campo-input">
+      <img src="../assets/img/icons/key_icon.png" alt="Ícone de Carta">
+      <input type="text" value="Senha" onclick="limparValor(this)">
+    </div>
+    <div class="campo-input">
+      <img src="../assets/img/icons/key_icon.png" alt="Ícone de Carta">
+      <input type="text" value="Confirmar Senha" onclick="limparValor(this)">
+    </div>
+
+  </div>
+  <div class="container">
+    <button class="button avancar btn-principal">Avançar</button>
+  </div>
+</body>
+
+</html>

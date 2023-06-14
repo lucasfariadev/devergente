@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/funcoes.js"></script>
+
   <title>Devergente</title>
 </head>
 
@@ -16,11 +18,11 @@
     <h1 class="h1-page">Entrar</h1>
     <div class="campo-input">
       <img src="../assets/img/icons/mail_icon.png" alt="Ícone de Carta">
-      <input type="text" value="pessoa@email.com">
+      <input type="text" value="pessoa@email.com" onclick="limparValor(this)">
     </div>
     <div class="campo-input">
       <img src="../assets/img/icons/key_icon.png" alt="Ícone de Chave">
-      <input type="password" value="*********">
+      <input type="password" value="*********" onclick="limparValor(this)">
     </div>
   </div>
   <div class="container">

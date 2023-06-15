@@ -37,9 +37,10 @@ body {
 
 .logo {
   width: 50vh;
-  margin-top: 20px;
-  filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, .2));
+  margin: auto;
+  filter: drop-shadow(.7em .4em .25em rgba(0, 0, 0, .3));
 }
+
 
 .h1-page{
   color: #fff;
@@ -57,16 +58,17 @@ body {
   font-family: 'OpenDyslexic', sans-serif;
   width: 20vh;
   height: 7vh;
-  border-radius: 25px;
+  border-radius: 2em;
   border: none;
-  font-size: 18px;
+  font-size: 1.2em;
   margin: 1vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
-  filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, .4));
+  margin-top: 4vh;
+  filter: drop-shadow(.7em .4em .25em rgba(0, 0, 0, .3));
 }
+
 
 .button:hover {
   cursor: pointer;
@@ -123,8 +125,8 @@ body {
   height: 5vh;
   margin-top: 5vh;
   background-color: #fff;
-  border-radius: 25px;
-  filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, .3));
+  border-radius: 2em;
+  filter: drop-shadow(.7em .4em .25em rgba(0, 0, 0, .4));
 }
 
 .campo-input img {
@@ -136,10 +138,10 @@ body {
 .campo-input input[type="password"] {
   border: none;
   background-color: transparent;
-  font-size: 16px;
+  font-size: 1em;
   width: 30vh;
   height: 5vh;
-  padding: 10px;
+  padding: .8em;
   color: #000;
   font-family: 'OpenDyslexic', sans-serif;
 }
@@ -149,6 +151,4 @@ body {
 outline: none;
 }
 
-.campo-input input[type="password"] {
-  letter-spacing: 4px;
-}
+

@@ -37,9 +37,8 @@ body {
 
 .logo {
   width: 15vh;
-  margin-top: 20px;
   margin: auto;
-  filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, .2));
+  filter: drop-shadow(.7rem .4rem .25rem rgba(0, 0, 0, .2));
 }
 
 .logo:hover {
@@ -62,15 +61,15 @@ body {
   font-family: 'OpenDyslexic', sans-serif;
   width: 20vh;
   height: 7vh;
-  border-radius: 25px;
+  border-radius: 2rem;
   border: none;
-  font-size: 18px;
+  font-size: 1.2rem;
   margin: 1vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
-  filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, .4));
+  margin-top: 4vh;
+  filter: drop-shadow(.7rem .4rem .25rem rgba(0, 0, 0, .3));
 }
 
 .button:hover {
@@ -93,6 +92,7 @@ body {
 
 .container-topo {
   display: flex;
+
   align-items: flex-start;
   flex-direction: column;
   margin-bottom: 4vh;
@@ -118,8 +118,8 @@ body {
   height: 5vh;
   margin-top: 2vh;
   background-color: #fff;
-  border-radius: 25px;
-  filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, .3));
+  border-radius: 2rem;
+  filter: drop-shadow(.7rem .4rem .25rem rgba(0, 0, 0, .3));
   z-index: -1;
   margin: 1.5vh;
 }
@@ -133,7 +133,8 @@ body {
 .campo p {
   border: none;
   background-color: transparent;
-  font-size: 16px;
+  font-size: .85rem;
+  margin-top: .4rem;
   width: 29vh;
   height: 5vh;
   color: #000;
@@ -161,8 +162,8 @@ a{
   height: 5vh;
   margin-top: 2vh;
   background-color: #fff;
-  border-radius: 25px;
-  filter: drop-shadow(10px 5px 2px rgba(0, 0, 0, .3));
+  border-radius: 2rem;
+  filter: drop-shadow(.7rem .4rem .25rem rgba(0, 0, 0, .3));
   z-index: 1000; /* Aumente o valor do z-index para garantir que fique acima dos outros elementos */
 }
 
@@ -172,6 +173,46 @@ a{
   margin-right: .4vh;
 }
 
+.dois-campos {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 34vh; /* Defina a largura total desejada para os campos */
+}
+
+
+.dois-campos .campo-input, .dois-campos .campo-input2 {
+  width: 13vh; /* Ajuste a largura dos campos com base na largura total e no espaçamento desejado */
+
+  margin-right: 0;
+}
+
+.dois-campos .campo-input2 .check{
+  margin-left: .4rem;
+  width: 1.8vh;
+}
+.dois-campos .campo-input2 p{
+
+  font-size: .6em;
+}
+
+.campo-input2:nth-child(2){
+  margin-left: 2vh;
+}
+
+.campo-input2 .anexo{
+  width: 2.4vh;
+  margin: 0 .2em;
+}
+
+
+.opcoes{
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  margin-left: 5vh;
+  margin-top: 0;
+}
 
 
 

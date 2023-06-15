@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/cadastrar.css">
+  <link rel="stylesheet" href="../../assets/css/cadastrar2.css">
+  <script src="../../assets/js/funcoes.js"></script>
+
+  <title>Devergente</title>
+</head>
+
+<body>
+  <div class="container-topo">
+    <div class="voltar">
+      <a href="javascript:history.back()" class="voltar-icon"><img src="../../assets/img/icons/voltar_icon.png" alt=""
+          srcset=""></a>
+    </div>
+    <h1 class="h1-page">Cadastrar</h1>
+    <img class="logo" src="../../assets/img/icons/Foto_Campo.png" alt="Logo do Site">
+    <div class="campo">
+        <img src="../../assets/img/icons/brain_icon.png">
+        <p onclick="handleFieldClick('cadastro-neurodivergente.html')">Sou Neurodivergente</p>
+        <input type="checkbox" class="check" onclick="handleCheckboxClick(this, 'cadastro-neurodivergente.html')">
+      </div>
+      <div class="campo">
+        <img src="../../assets/img/icons/family_icon.png">
+        <p onclick="handleFieldClick('cadastro-familiar.html')">Sou Um Familiar</p>
+        <input type="checkbox" class="check" onclick="handleCheckboxClick(this, 'cadastro-familiar.html')">
+      </div>
+      <div class="campo">
+        <img src="../../assets/img/icons/doctor_icon.png">
+        <p onclick="handleFieldClick('cadastro-profissional.html')">Sou Um Profissional</p>
+        <input type="checkbox" class="check" onclick="handleCheckboxClick(this, 'cadastro-profissional.html')">
+      </div>
+      <div class="campo">
+        <img src="../../assets/img/icons/simpatizante_icon.png">
+        <p onclick="handleFieldClick('interesses.html')">Sou Um Simpatizante</p>
+        <input type="checkbox" class="check" onclick="handleCheckboxClick(this, 'interesses.html')">
+      </div>
+    </div>
+
+    
+  </div>
+  <div class="container">
+    <a class="button avancar btn-principal">Avançar</a>
+  </div>
+</body>
+
+</html>

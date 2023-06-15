@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/css/cadastrar.css">
-  <script src="../assets/js/funcoes.js"></script>
+  <link rel="stylesheet" href="../../assets/css/cadastrar.css">
+  <script src="../../assets/js/funcoes.js"></script>
 
   <title>Devergente</title>
 </head>
@@ -13,21 +13,21 @@
 <body>
   <div class="container-topo">
     <div class="voltar">
-      <a href="javascript:history.back()" class="voltar-icon"><img src="../assets/img/icons/voltar_icon.png" alt=""
+      <a href="javascript:history.back()" class="voltar-icon"><img src="../../assets/img/icons/voltar_icon.png" alt=""
           srcset=""></a>
     </div>
     <h1 class="h1-page">Cadastrar</h1>
     <div class="campo-input">
-      <img src="../assets/img/icons/person_icon.png" alt="Ícone de Carta">
+      <img src="../../assets/img/icons/person_icon.png" alt="Ícone de Carta">
       <input type="text" value="Nome Completo" onclick="limparValor(this)">
     </div>
 
     <div class="dois-campos">
       <div class="campo-input2">
         <div class="selected-option nascSelect" onclick="toggleOptions('optionsListNasc')">        
-          <img src="../assets/img/icons/birth_icon.png" alt="Ícone de Nascimento">
+          <img src="../../assets/img/icons/birth_icon.png" alt="Ícone de Nascimento">
           <span id="nasc">Nasc.</span> 
-          <img src="../assets/img/icons/calendar_icon.png" alt="Ícone de calendario">
+          <img src="../../assets/img/icons/calendar_icon.png" alt="Ícone de calendario">
         </div>
         <div class="options-list" id="optionsListNasc">
           <div class="option" onclick="selectOption('Nasc.')">
@@ -100,20 +100,20 @@
       
       <div class="campo-input2">
         <div class="selected-option generoSelect" onclick="toggleOptions('optionsListGenero')">        
-          <img src="../assets/img/icons/gender_icon.png" alt="Ícone de genero">
+          <img src="../../assets/img/icons/gender_icon.png" alt="Ícone de genero">
           <span id="genero">Gênero</span> 
-          <img src="../assets/img/icons/Polygon 1.png" alt="Ícone de poligono">
+          <img src="../../assets/img/icons/Polygon 1.png" alt="Ícone de poligono">
         </div>
         <div class="options-list" id="optionsListGenero">
           <div class="option" onclick="selectOption('Masculino')"> 
-                     <img src="../assets/img/icons/masculino_icon.png" alt="Ícone de Masculino">
+                     <img src="../../assets/img/icons/masculino_icon.png" alt="Ícone de Masculino">
                      Masculino</div>
           <div class="option" onclick="selectOption('Feminino')">
-            <img src="../assets/img/icons/feminino_icon.png" alt="Ícone de Feminino">
+            <img src="../../assets/img/icons/feminino_icon.png" alt="Ícone de Feminino">
             Feminino
           </div>
           <div class="option" onclick="selectOption('Não Binário')">
-            <img src="../assets/img/icons/naobinario_icon.png" alt="Ícone de Não Binário">
+            <img src="../../assets/img/icons/naobinario_icon.png" alt="Ícone de Não Binário">
             Não Binário
           </div>
         </div>
@@ -121,24 +121,24 @@
     </div>
 
     <div class="campo-input">
-      <img src="../assets/img/icons/mail_icon.png" alt="Ícone de Carta">
-      <input type="text" value="Email" onclick="limparValor(this)">
+      <img src="../../assets/img/icons/mail_icon.png" alt="Ícone de Carta">
+      <input type="email" value="Email" onclick="limparValor(this)">
     </div>
     <div class="campo-input">
-      <img src="../assets/img/icons/mail_icon.png" alt="Ícone de Carta">
-      <input type="text" value="Confirmar Email" onclick="limparValor(this)">
+      <img src="../../assets/img/icons/mail_icon.png" alt="Ícone de Carta">
+      <input type="email" value="Confirmar Email" onclick="limparValor(this)">
     </div>
     <div class="campo-input">
-      <img src="../assets/img/icons/key_icon.png" alt="Ícone de Carta">
+      <img src="../../assets/img/icons/key_icon.png" alt="Ícone de Carta">
       <input type="text" value="Senha" onclick="limparValor(this)">
     </div>
     <div class="campo-input">
-      <img src="../assets/img/icons/key_icon.png" alt="Ícone de Carta">
+      <img src="../../assets/img/icons/key_icon.png" alt="Ícone de Carta">
       <input type="text" value="Confirmar Senha" onclick="limparValor(this)">
     </div>
   </div>
   <div class="container">
-    <button class="button avancar btn-principal">Avançar</button>
+    <a class="button avancar btn-principal" href="cadastrar2.html">Avançar</a>
   </div>
 </body>
 

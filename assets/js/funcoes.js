@@ -40,3 +40,19 @@ function selectOption(option) {
   }
 }
 
+    // Função para redirecionar para a página desejada
+    function redirectToPage(pageUrl) {
+      window.location.href = pageUrl;
+    }
+
+    // Função para tratar o evento de clique no campo
+    function handleFieldClick(pageUrl) {
+      redirectToPage(pageUrl);
+    }
+
+    // Função para tratar o evento de clique no checkbox
+    function handleCheckboxClick(checkbox, pageUrl) {
+      if (checkbox.checked) {
+        redirectToPage(pageUrl);
+      }
+    }

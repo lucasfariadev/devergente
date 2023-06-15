@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/cadastrar.css">
   <script src="../assets/js/funcoes.js"></script>
+
   <title>Devergente</title>
 </head>
 
 <body>
   <div class="container-topo">
     <div class="voltar">
-      <a href="javascript:history.back()" class="voltar-icon"><img src="../assets/img/icons/voltar_icon.png" alt="" srcset=""></i></a>
+      <a href="javascript:history.back()" class="voltar-icon"><img src="../assets/img/icons/voltar_icon.png" alt=""
+          srcset=""></a>
     </div>
     <h1 class="h1-page">Cadastrar</h1>
     <div class="campo-input">
@@ -21,23 +23,102 @@
     </div>
 
     <div class="dois-campos">
-      <div class="campo-input">
-        <img src="../assets/img/icons/birth_icon.png" alt="Ícone de Chave">
-        <input type="text" value="Nasc." onclick="limparValor(this)">
-        <img src="../assets/img/icons/calendar_icon.png" alt="Ícone de Chave">
+      <div class="campo-input2">
+        <div class="selected-option nascSelect" onclick="toggleOptions('optionsListNasc')">        
+          <img src="../assets/img/icons/birth_icon.png" alt="Ícone de Nascimento">
+          <span id="nasc">Nasc.</span> 
+          <img src="../assets/img/icons/calendar_icon.png" alt="Ícone de calendario">
+        </div>
+        <div class="options-list" id="optionsListNasc">
+          <div class="option" onclick="selectOption('Nasc.')">
+            <div class="containerCalendar">
+              <div class="calendar">
+                <div class="front">
+        
+                  <div class="current-month">
+        
+                    <div class="weeks">
+                      <div class="first">
+                        <span class="last-month">28</span>
+                        <span class="last-month">29</span>
+                        <span class="last-month">30</span>
+                        <span class="last-month">31</span>
+                        <span>01</span>
+                        <span>02</span>
+                        <span>03</span>
+                      </div>
+        
+                      <div class="second">
+                        <span>04</span>
+                        <span>05</span>
+                        <span class="event">06</span>
+                        <span>07</span>
+                        <span>08</span>
+                        <span>09</span>
+                        <span>10</span>
+                      </div>
+        
+                      <div class="third">
+                        <span>11</span>
+                        <span>12</span>
+                        <span>13</span>
+                        <span>14</span>
+                        <span class="active">15</span>
+                        <span>16</span>
+                        <span>17</span>
+                      </div>
+        
+                      <div class="fourth">
+                        <span>18</span>
+                        <span>19</span>
+                        <span>20</span>
+                        <span>21</span>
+                        <span>22</span>
+                        <span>23</span>
+                        <span>24</span>
+                      </div>
+        
+                      <div class="fifth">
+                        <span>25</span>
+                        <span>26</span>
+                        <span>27</span>
+                        <span>28</span>
+                        <span>29</span>
+                        <span>30</span>
+                        <span>31</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <div class="campo-input">
-        <div class="select-customizado">
-          <select>
-            <option selected disabled hidden>Gênero</option>
-            <option value="masculino">Masculino</option>
-            <option value="feminino">Feminino</option>
-            <option value="nao-binario">Não Binário</option>
-          </select>
+      
+      <div class="campo-input2">
+        <div class="selected-option generoSelect" onclick="toggleOptions('optionsListGenero')">        
+          <img src="../assets/img/icons/gender_icon.png" alt="Ícone de genero">
+          <span id="genero">Gênero</span> 
+          <img src="../assets/img/icons/Polygon 1.png" alt="Ícone de poligono">
+        </div>
+        <div class="options-list" id="optionsListGenero">
+          <div class="option" onclick="selectOption('Masculino')"> 
+                     <img src="../assets/img/icons/masculino_icon.png" alt="Ícone de Masculino">
+                     Masculino</div>
+          <div class="option" onclick="selectOption('Feminino')">
+            <img src="../assets/img/icons/feminino_icon.png" alt="Ícone de Feminino">
+            Feminino
+          </div>
+          <div class="option" onclick="selectOption('Não Binário')">
+            <img src="../assets/img/icons/naobinario_icon.png" alt="Ícone de Não Binário">
+            Não Binário
+          </div>
         </div>
       </div>
     </div>
-    
 
     <div class="campo-input">
       <img src="../assets/img/icons/mail_icon.png" alt="Ícone de Carta">
@@ -55,7 +136,6 @@
       <img src="../assets/img/icons/key_icon.png" alt="Ícone de Carta">
       <input type="text" value="Confirmar Senha" onclick="limparValor(this)">
     </div>
-
   </div>
   <div class="container">
     <button class="button avancar btn-principal">Avançar</button>

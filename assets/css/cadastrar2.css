@@ -86,60 +86,20 @@ body {
   color: var(--laranja);
 }
 
-.btn-principal {
-  width: 40vh;
-}
 
-.container-topo {
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-  margin-bottom: 4vh;
-  margin-top: 7vh;
-  z-index: 1;
-  margin-left: -11vh;
-}
 
-.voltar {
-  display: flex;
-  align-items: center;
-}
 
-.voltar-icon img{
-  width: 4vh;
-  color: #fff;
-  margin-bottom: 3vh;
-}
 
-.campo {
-  display: flex;
-  align-items: center;
-  width: 40vh;
-  height: 5vh;
-  margin-top: 2vh;
-  background-color: #fff;
-  border-radius: 2rem;
-  filter: drop-shadow(.7rem .4rem .25rem rgba(0, 0, 0, .3));
-  z-index: -1;
-  margin: 1.5vh;
-}
 
 
 .campo p {
-  border: none;
-  background-color: transparent;
   font-size: .85rem;
   margin-top: .4rem;
   width: 29vh;
   height: 5vh;
-  color: #000;
-  font-family: 'OpenDyslexic', sans-serif;
+
 }
 
-.campo p:hover {
-  color: var(--roxo);
-  cursor: pointer;
-}
 
 a{
   text-decoration: none;
@@ -162,6 +122,10 @@ a{
   z-index: 1000; /* Aumente o valor do z-index para garantir que fique acima dos outros elementos */
 }
 
+.campo input:hover{
+  cursor: pointer;
+}
+
 .campo img {
   width: 3.4vh;
   margin-left: 1.4vh;
@@ -181,6 +145,11 @@ a{
   filter: drop-shadow(.7em .4em .25em rgba(0, 0, 0, .3));
   margin-right: 0;
   justify-content: left;
+}
+
+.dois-campos .campo-input, .dois-campos .campo-input2:hover{
+  color: var(--roxo);
+  cursor: pointer;
 }
 
 
@@ -257,6 +226,10 @@ a{
 .dois-campos .campo-input2 .check{
   margin-left: .2em;
   margin-right: .3em;
+}
+
+.dois-campos .campo-input2 .check:hover{
+  cursor: pointer;
 }
 
 

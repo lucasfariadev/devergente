@@ -92,12 +92,12 @@ body {
 
 .container-topo {
   display: flex;
-  justify-content: left;
+
+  align-items: flex-start;
   flex-direction: column;
   margin-bottom: 4vh;
   margin-top: 7vh;
   z-index: 1;
-  margin-left: -11vh;
 }
 
 .voltar {
@@ -123,6 +123,7 @@ body {
   z-index: -1;
   margin: 1.5vh;
 }
+
 
 
 .campo p {
@@ -177,23 +178,50 @@ a{
 
 
 .dois-campos .campo-input, .dois-campos .campo-input2 {
-  width: 13vh; /* Ajuste a largura dos campos com base na largura total e no espaçamento desejado */
-  filter: drop-shadow(.7em .4em .25em rgba(0, 0, 0, .3));
+  width: 25vh;  /* Ajuste a largura dos campos com base na largura total e no espaçamento desejado */
+
   margin-right: 0;
+}
+
+.dois-campos .campo-input2 .check{
+  margin-left: .4rem;
+  width: 2.8vh;
+}
+
+.dois-campos .campo-input2 p{
+
+  font-size: .9em;
+}
+
+.campo-input2:nth-child(2){
+  margin-left: 2vh;
+}
+
+.campo-input2 .anexo{
+  width: 2.4vh;
+  margin: 0 .2em;
+}
+
+
+.opcoes{
+  display: flex;
   justify-content: left;
+  flex-direction: column;
+  margin-left: 5vh;
+  margin-top: 0;
 }
 
 
 .opcoes .ultima{
   margin-top: .8em;
-  margin-left: 3.5em;
+  margin-left: 8.4em;
   padding-left: 1em;
   font-size: .6em;
   background-color: #fff;
   border-radius: 2em;
   display: flex;
   align-items: center;
-  width: 28vh;
+  width: 21vh;
   height: 5vh;
   margin-top: 2vh;
   background-color: #fff;
@@ -206,7 +234,7 @@ a{
 .opcoes .ultima input{
   border: none;
   background-color: #D9D9D9;
-  width: 19vh;
+  width: 12vh;
   margin-left: .4em;
   border-radius: .3em;
 }
@@ -215,56 +243,19 @@ a{
   outline: none;
 }
 
-.dois-campos .campo-input2 .check{
-  margin-left: .4rem;
-  width: 1.8vh;
-}
-.dois-campos .campo-input2 p{
-  margin-right: auto;
-  font-size: .6em;
-}
+.campo-input2 img {
+  width: 3vh;
+  margin-left: 1.5vh;
+  margin-right: .4vh;
 
-.campo-input2:nth-child(2){
-  margin-left: 2vh;
-}
-
-.campo-input2 .anexo{
-  width: 2.4vh;
-  margin: 0 .2em;
-}
-
-.campo-input2 .anexo:hover{
-  cursor: pointer;
-}
-
-
-.opcoes{
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-  margin-left: 5vh;
-  margin-top: 0;
-}
-
-.campo-input2 img{
-  margin: 0;
-}
+} 
 
 .campo-input2 {
-  justify-content: space-between;
+  justify-content: left;
 }
 
-.dois-campos .campo-input2 .check{
-  margin-left: .2em;
-  margin-right: .3em;
+.campo-input2 p{
+  margin-right: auto;
 }
-
-
-
-
-
-
-
-
 
 

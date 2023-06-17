@@ -27,9 +27,7 @@
 body {
   font-family: 'OpenDyslexic', sans-serif;
   display: flex;
-
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   height: 100vh;
   margin: 0;
@@ -43,9 +41,9 @@ body {
 
 .container {
   display: flex;
-  align-items: center;
+
   
-  margin: auto 2vh 10% 2vh;
+  margin: auto 2vh 10vh 2vh;
 
 }
 
@@ -94,7 +92,7 @@ body {
 
 .container-topo {
   display: flex;
-  align-items: flex-start;
+
   flex-direction: column;
   margin-bottom: 5vh;
   margin-top: 7vh;

@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('../assets/fonts/OpenDyslexic-Regular.otf'),
+       url('../assets/fonts/OpenDyslexic-Bold.otf'),
+       url('../assets/fonts/OpenDyslexic-BoldItalic.otf'),
+       url('../assets/fonts/OpenDyslexic-Italic.otf');
+     
+  /* Outros formatos de arquivo podem ser adicionados aqui */
+}
+
+:root {
+  --azul: #55ACEE;
+  --verde: #12BD12;
+  --laranja: #FF7800;
+  --roxo: #800080;
+  --vermelho: #F7000F;
+  --amarelo: #FFCD32;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'OpenDyslexic', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--roxo);
+}
+
+.cabecalho{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1vh;
+  background-color: var(--azul);
+  padding-bottom: 1vh;
+  margin-bottom: .3vh;
+
+}
+
+.noti-chat{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1vh;
+}
+
+.noti-chat #notificacao{
+  margin-right: 1vh;
+}
+
+.stories{
+  background-color: var(--azul);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 10vh;
+  margin-bottom: .3vh;
+}
+
+
+.feed{
+  display: flex;
+
+  background-color: var(--azul);
+  width: 100%;
+  justify-content: center;
+  height: 73vh;
+  margin-bottom: .3vh;
+}
+
+.menu{
+  display: flex;
+  background-color: var(--azul);
+  width: 100%;
+  justify-content: center;
+  height: 10vh;
+}
+
+.post{
+  height: 80vh;
+}
+

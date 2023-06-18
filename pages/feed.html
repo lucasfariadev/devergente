@@ -14,71 +14,98 @@
     <script src="assets/js/funcoes.js"></script>
 
     <title>Devergente</title>
+
 </head>
 
 <body>
     <!-- ----------- cabeçalho ----------- -->
 
     <header class="cabecalho container-fluid">
-
-        <div id="addPost">
-            <img src="../assets/img/icons/plus_icon.png" alt="" srcset="">
-        </div>
-        <div class="noti-chat">
-            <div id="notificacao">
-                <img src="../assets/img/icons/noti.png" alt="" srcset="">
-
+        <div class="cabec">
+            <div id="addPost">
+                <img src="../assets/img/icons/plus_icon.png" alt="" srcset="">
             </div>
-            <div id="chat">
-                <img src="../assets/img/icons/chat.png" alt="" srcset="">
+            <div class="noti-chat">
+                <div id="notificacao">
+                    <img src="../assets/img/icons/noti.png" alt="" srcset="">
 
+                </div>
+                <div id="chat">
+                    <img src="../assets/img/icons/chat.png" alt="" srcset="">
+
+                </div>
             </div>
         </div>
 
     </header>
 
     <!-- ----------- Stories ----------- -->
-    <div class="stories">
-        <div class="infinite-scroll py-3 text-center" id="direction-example" style="max-width: 1500px; overflow-x: scroll; white-space: nowrap;" data-infinite-direction="x">
-            <span class="mx-1"><i class="far fa-angry fa-3x mr-4"></i> perfil</span>
-            <span class="mx-1"><i class="far fa-dizzy fa-3x mr-4"></i> storie1</span>
-            <span class="mx-1"><i class="far fa-flushed fa-3x mr-4"></i> storie2</span>
-            <span class="mx-1"><i class="far fa-grimace fa-3x mr-4"></i> storie3</span>
-            <span class="mx-1"><i class="far fa-grin fa-3x mr-4"></i> storie4</span>
-            <span class="mx-1"><i class="far fa-grin fa-3x mr-4"></i> storie5</span>
-            <span class="mx-1"><i class="far fa-grin fa-3x mr-4"></i> storie6</span>
-            <span class="mx-1"><i class="far fa-grin fa-3x mr-4"></i> storie7</span>
+    <div class="linha-stories">
+        <div class="stories">
+            <div class="infinite-scroll" id="direction-example">
+                <span class="mx-1">
+                    <img src="../assets/img/perfil/stories/userStory.png" alt="" srcset="">
+                </span>
+                <span class="mx-1">
+                    <img src="../assets/img/perfil/stories/str1.png" alt="" srcset="">
+                </span> <span class="mx-1">
+                    <img src="../assets/img/perfil/stories/str2.png" alt="" srcset="">
+                </span> <span class="mx-1">
+                    <img src="../assets/img/perfil/stories/str3.png" alt="" srcset="">
+                </span> <span class="mx-1">
+                    <img src="../assets/img/perfil/stories/str4.png" alt="" srcset="">
+                </span> <span class="mx-1">
+                    <img src="../assets/img/perfil/stories/str5.png" alt="" srcset="">
+                </span> <span class="mx-1">
+                    <img src="../assets/img/perfil/stories/str6.png" alt="" srcset="">
+                </span>
+                </span> <span class="mx-1">
+                    <img src="../assets/img/perfil/stories/str7.png" alt="" srcset="">
+                </span>
+            </div>
         </div>
     </div>
 
     <!-- ----------- Feed ----------- -->
     <main class="feed">
-        <ul class="container list-group infinite-scroll" id="basic-example" style="max-height: 261px; overflow-y: scroll;">
-            <li class="list-group-item d-flex align-items-center">
-              <i class="far fa-angry fa-3x mr-4"></i> perfil-post
-            </li>
-            <li class="list-group-item d-flex align-items-center">
-              <i class="far fa-dizzy fa-3x mr-4"></i> post1
-            </li>
-            <li class="list-group-item d-flex align-items-center">
-              <i class="far fa-flushed fa-3x mr-4"></i> post2
-            </li>
-            <li class="list-group-item d-flex align-items-center">
-              <i class="far fa-frown fa-3x mr-4"></i> post3
-            </li>
-            <li class="list-group-item d-flex align-items-center">
-              <i class="far fa-grimace fa-3x mr-4"></i> post4
-            </li>
-            <li class="list-group-item d-flex align-items-center">
-              <i class="far fa-grin fa-3x mr-4"></i> post5
-            </li>
-          </ul>
+        <div class="posts">
+            <div class="infinite-scroll-feed">
+                <div class="linha-post">
+                    <div class="post">
+                        <div class="cabec-post">
+                            <img src="../assets/img/perfil/lucas.png" alt="" srcset="">
+                            <div class="info">
+                                <span>Lucas Faria</span>
+                                <span>1h. Cotia - SP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="linha-post">
+                    <div class="post">
+                        <div class="cabec-post">
+                            <img src="../assets/img/perfil/lucas.png" alt="" srcset="">
+                            <div class="info">
+                                <span>Lucas Faria</span>
+                                <span>1h. Cotia - SP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- ----------- Menu -------------- -->
     <nav class="menu">
-        asdasdasd
+        <div>inicio</div>
+        <div>busca</div>
+        <div>news</div>
+        <div>vagas</div>
+        <div>perfil</div>
     </nav>
+
 
 </body>
 

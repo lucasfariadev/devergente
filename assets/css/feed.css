@@ -25,6 +25,7 @@
 }
 
 body {
+  
   font-family: 'OpenDyslexic', sans-serif;
   display: flex;
   flex-direction: column;
@@ -32,16 +33,25 @@ body {
   height: 100vh;
   margin: 0;
   background-color: var(--roxo);
+
+
 }
 
 .cabecalho{
+  display: flex;
+  background-color: var(--azul);
+  margin-bottom: .3vh;
+  justify-content: center;
+}
+
+.cabec{
   display: flex;
   justify-content: space-between;
   padding-top: 1vh;
   background-color: var(--azul);
   padding-bottom: 1vh;
-  margin-bottom: .3vh;
 
+  width: 50vh;
 }
 
 .noti-chat{
@@ -53,21 +63,28 @@ body {
 .noti-chat #notificacao{
   margin-right: 1vh;
 }
+.linha-stories{
+  display: flex;
+  justify-content: center;
+  background-color: var(--azul);
+  width: 100%;
+  margin-bottom: .32vh;
+}
 
 .stories{
   background-color: var(--azul);
   display: flex;
   width: 100%;
   justify-content: center;
-  height: 10vh;
-  margin-bottom: .3vh;
+  height: 14.9vh;
+  margin-bottom: .32vh;
+  padding: 0;
+  padding-top: 2vh;
+  width: 50vh;
 }
-
 
 .feed{
   display: flex;
-
-  background-color: var(--azul);
   width: 100%;
   justify-content: center;
   height: 73vh;
@@ -82,7 +99,85 @@ body {
   height: 10vh;
 }
 
-.post{
-  height: 80vh;
+
+.linha-post{
+  background-color: var(--azul);
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;  
+  margin-bottom: .1em;
+
 }
 
+.post{
+  width: 50vh;
+  height: 40vh;
+  margin-bottom: .3em;
+  background-color: var(--azul);
+  padding-left: 1.4vh;
+}
+
+.cabec-post{
+  margin-top: 1vh;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1vh;
+  margin-top: 1vh;
+
+}
+
+.info span{
+  font-size: .5em;
+  color: var(--roxo);
+
+}
+
+div::-webkit-scrollbar {
+  width: 0  ;
+  /* width of the entire scrollbar */
+}
+
+div::-webkit-scrollbar-track {
+  background: transparent;
+  /* color of the tracking area */
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  /* color of the scroll thumb */
+
+  /* roundness of the scroll thumb */
+  border: none;
+  /* creates padding around scroll thumb */
+}
+
+.infinite-scroll{
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding: 0;
+
+}
+.infinite-scroll-feed{
+  display: flex;
+  overflow-y: scroll;
+
+  height: 70vh;
+  flex-direction: column;
+  overflow-y: scroll;
+  white-space: nowrap;
+}
+
+.posts{
+  width: 100%;
+}
+
+.menu div{
+  padding: 1vh;
+}

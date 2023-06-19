@@ -108,7 +108,7 @@ body {
 .linha-post{
   background-color: var(--azul);
   width: 100%;
-  height: 55vh;
+  height: 15vh;
   display: flex;
   justify-content: center;  
   margin-bottom: .1em;
@@ -119,8 +119,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 48vh;
-  height: 40vh;
+  display: flex;
+  justify-content: center;
+  width: 50vh;
+  height: 15vh;
   margin-bottom: .3em;
   background-color: var(--azul);
   padding-left: 1.4vh;
@@ -182,8 +184,6 @@ div::-webkit-scrollbar-thumb {
 }
 
 
-
-
 .reacoes{
   margin-top: 1vh;
 }
@@ -204,13 +204,20 @@ div::-webkit-scrollbar-thumb {
 }
 
 
-.post{
-  display: flex;
-  justify-content: center;
-  width: 48vh;
-}
 
 .post .news{
   margin: .3vh;
   width: 100%;
+}
+
+.linha-busca{
+  display: flex;
+  justify-content: center;
+  background-color: var(--azul);
+  width: 100%;
+  height: 15vh;
+  margin-bottom: .32vh;
+}
+.busca{
+  width: 50vh;
 }

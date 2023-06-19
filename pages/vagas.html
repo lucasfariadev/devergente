@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/vagas.css">
+
+    <script src="../assets/js/menu.js"></script>
+
+    <title>Devergente</title>
+
+</head>
+
+<body>
+    <!-- ----------- cabeçalho ----------- -->
+
+    <header class="cabecalho container-fluid">
+        <div class="cabec">
+            <div id="addPost">
+                <img src="../assets/img/icons/plus_icon.png" alt="" srcset="">
+            </div>
+            <div class="noti-chat">
+                <div id="notificacao">
+                    <img src="../assets/img/icons/noti.png" alt="" srcset="">
+
+                </div>
+                <div id="chat">
+                    <img src="../assets/img/icons/chat.png" alt="" srcset="">
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- ----------- Stories ----------- -->
+    <div class="linha-stories">
+        <div class="stories">
+            <div class="infinite-scroll" id="direction-example">
+                <span class="mx-1">
+                    <img src="../assets/img/perfil/stories/userStory.png" alt="" srcset="">
+                </span>
+                <span class="mx-1">
+                    <img class="perfil" src="../assets/img/perfil/stories/str1.png" alt="" srcset="">
+                </span> <span class="mx-1">
+                    <img class="perfil" src="../assets/img/perfil/stories/str2.png" alt="" srcset="">
+                </span> <span class="mx-1">
+                    <img class="perfil" src="../assets/img/perfil/stories/str3.png" alt="" srcset="">
+                </span> <span class="mx-1">
+                    <img class="perfil" src="../assets/img/perfil/stories/str4.png" alt="" srcset="">
+                </span> <span class="mx-1">
+                    <img class="perfil" src="../assets/img/perfil/stories/str5.png" alt="" srcset="">
+                </span> <span class="mx-1">
+                    <img class="perfil" src="../assets/img/perfil/stories/str6.png" alt="" srcset="">
+                </span>
+                </span> <span class="mx-1">
+                    <img class="perfil" src="../assets/img/perfil/stories/str7.png" alt="" srcset="">
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- ----------- Busca ----------- -->
+
+    <div class="linha-busca">
+        <div class="busca">
+            <img src="../assets/img/icons/campo-busca.png" alt="" srcset="">
+        </div>
+    </div>
+
+    <!-- ----------- Feed ----------- -->
+    <main class="feed">
+        <div class="posts">
+            <div class="infinite-scroll-feed">
+                <div class="linha-post">
+                    <div class="post">
+                        <img class=" " src="../assets/img/posts/vagas/vaga1.png" alt="" srcset="">
+                    </div>
+                </div>
+
+                <div class="linha-post">
+                    <div class="post">
+                        <img class=" " src="../assets/img/posts/vagas/vaga2.png" alt="" srcset="">
+                    </div>
+                </div>
+
+                <div class="linha-post">
+                    <div class="post">
+                        <img class=" " src="../assets/img/posts/vagas/vaga3.png" alt="" srcset="">
+                    </div>
+                </div>
+
+                <div class="linha-post">
+                    <div class="post">
+                        <img class=" " src="../assets/img/posts/vagas/vaga4.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="linha-post">
+                    <div class="post">
+                        <img class=" " src="../assets/img/posts/vagas/vaga5.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ----------- Menu -------------- -->
+    <nav class="menu">
+        <div>
+            <a href="feed.html">
+                <img class="menu-img" src="../assets/img/icons/menu/início.png"
+                    onmouseover="trocarImagem(this, '../assets/img/icons/menu-hover/início.png')"
+                    onmouseout="trocarImagem(this, '../assets/img/icons/menu/início.png')">
+            </a>
+        </div>
+        <div>
+            <a href="busca.html">
+                <img class="menu-img" src="../assets/img/icons/menu/busca.png"
+                    onmouseover="trocarImagem(this, '../assets/img/icons/menu-hover/busca.png')"
+                    onmouseout="trocarImagem(this, '../assets/img/icons/menu/busca.png')">
+            </a>
+        </div>
+        <div>
+            <a href="noticias.html">
+                <img class="menu-img" src="../assets/img/icons/menu/notícias.png"
+                    onmouseover="trocarImagem(this, '../assets/img/icons/menu-hover/notícias.png')"
+                    onmouseout="trocarImagem(this, '../assets/img/icons/menu/notícias.png')">
+            </a>
+        </div>
+        <div>
+            <a href="vagas.html">
+                <img class="menu-img" src="../assets/img/icons/menu/vagas.png"
+                    onmouseover="trocarImagem(this, '../assets/img/icons/menu-hover/vagas.png')"
+                    onmouseout="trocarImagem(this, '../assets/img/icons/menu/vagas.png')">
+            </a>
+        </div>
+        <div>
+            <a href="perfil.html">
+                <img class="menu-img" src="../assets/img/icons/menu/perfil.png"
+                    onmouseover="trocarImagem(this, '../assets/img/icons/menu-hover/perfil.png')"
+                    onmouseout="trocarImagem(this, '../assets/img/icons/menu/perfil.png')">
+            </a>
+        </div>
+    </nav>
+
+</body>
+
+</html>

@@ -119,10 +119,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 55vh;
-  height: 50vh;
+  width: 48vh;
+  height: 40vh;
   margin-bottom: .3em;
   background-color: var(--azul);
+
   padding-left: 1.4vh;
 }
 
@@ -235,3 +236,13 @@ div::-webkit-scrollbar-thumb {
 }
 
 
+.post{
+  display: flex;
+  justify-content: center;
+  width: 48vh;
+}
+
+.post .news{
+  margin: .3vh;
+  width: 100%;
+}
